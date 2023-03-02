@@ -1,0 +1,144 @@
+<h1>Emmet</h1>
+<!-- 
+    etiket isimlerini direk verebiliyoruz!
+    + kardes öge -> aynı hizadaki ögelerde mesela h1+h2 tab'a bas!
+    > icinde öge -> bir ögenin içinde başka öge oluşur
+    ^ yukarı cık ve öge olustur
+    * carp -> p*3
+    lorem?? ->uzun anlamsız yazılar oluşur
+    lorem4  -> 4 kelimelik lorem oluşur
+    . -> class
+    # -> id
+ -->
+
+ <!-- h1+h2 -->
+ <h1></h1>
+ <h2></h2>
+
+ <!-- h1+p+p+h2+p+p+p+p -->
+ <h1></h1>
+ <p></p>
+ <p></p>
+ <h2></h2>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+
+ <!-- h1+p+p+h2+p+p+p+p -> h1+p*2+h2+p*4 -->
+ <h1></h1>
+ <p></p>
+ <p></p>
+ <h2></h2>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+
+ <!-- ul>li -->
+ <ul>
+    <li></li>
+ </ul>
+
+ <!-- ul>li*5 -->
+ <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+
+ <!-- ul>li*3^p paragrafı li'nin içine koymaz-->
+ <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+ <p></p>
+
+<!-- ul>li*3+p HATALI -> paragrafı li'nin içine koyar-->
+ <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <p></p>
+ </ul>
+
+ <!-- ul>li*3^p*2+h3 -->
+ <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+ <p></p>
+ <p></p>
+ <h3></h3>
+
+ <!-- p>lorem -->
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis necessitatibus quod nostrum aperiam distinctio quas molestias, sint ducimus suscipit assumenda eius blanditiis ab voluptatibus deleniti consequatur expedita. Modi, dicta.</p>
+
+ <!-- p>lorem*4 -->
+ <p>Lorem ipsum dolor sit.</p>
+
+ <!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1- HATALI-->
+ <ul>
+    <li>Lorem.</li>
+    <li>Tenetur.</li>
+    <li>Ad.</li>
+    <p>
+        Lorem ipsum dolor sit.
+        <h3>Lorem.</h3>
+    </p>
+    <p>
+        Delectus harum qui impedit.
+        <h3>Quod.</h3>
+    </p>
+ </ul>
+
+ <!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
+ <ul>
+    <li>Lorem.</li>
+    <li>Quibusdam.</li>
+    <li>Quas.</li>
+ </ul>
+ <p>Lorem ipsum dolor sit.</p>
+ <p>Soluta quaerat accusantium laboriosam.</p>
+ <h3>Lorem.</h3>
+
+ <!-- h3.deneme -> h3 içinde class gelir -->
+ <h3 class="deneme"></h3>
+
+ <!-- h3.deneme>lorem1 -->
+ <h3 class="deneme">Lorem.</h3>
+
+ <!-- h3#idolussun>lorem1 -->
+ <h3 id="idolussun">Lorem.</h3>
+
+ <!-- h3.deneme#idolussun>lorem1 -->
+ <h3 class="deneme" id="idolussun">Lorem.</h3>
+
+<!-- h3.deneme1.deneme2 ->2 ayrı class oluşturulmak istendiğinde-->
+<h3 class="deneme1 deneme2"></h3>
+
+<!-- .tepki -> sadece nokta koyarsak div içinde class olur-->
+<div class="tepki"></div>
+
+<!-- ul>li.tepki -->
+<ul>
+    <li class="tepki"></li>
+</ul>
+
+<!-- ul>.tepki*3 -> ul'nin içinde olduğu için li verir -->
+<ul>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+</ul>
+
+<!-- ul>li.tepki*3 -->
+<ul>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+    <li class="tepki"></li>
+</ul>
